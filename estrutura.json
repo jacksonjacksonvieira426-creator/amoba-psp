@@ -1,0 +1,5825 @@
+{
+  "jar": "Amoba.jar",
+  "nome_projeto": "amoba",
+  "midlet": "AmobaMIDlet",
+  "canvas": "b",
+  "classes": [
+    {
+      "arquivo": "AmobaMIDlet.class",
+      "nome": "AmobaMIDlet",
+      "super": "MIDlet",
+      "campos": [
+        {
+          "nome": "for",
+          "desc": "Lf;",
+          "tipo_c": "f*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ld;",
+          "tipo_c": "d*"
+        },
+        {
+          "nome": "a",
+          "desc": "Ljava/util/Hashtable;",
+          "tipo_c": "Hashtable*"
+        },
+        {
+          "nome": "if",
+          "desc": "Lc;",
+          "tipo_c": "c*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/midlet/MIDlet.<init>"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 32,
+          "apis": {},
+          "constantes": [
+            [
+              21,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "AmobaMIDlet.if"
+            ],
+            [
+              12,
+              "putfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              18,
+              "putfield",
+              "AmobaMIDlet.do"
+            ],
+            [
+              20,
+              "getfield",
+              "AmobaMIDlet.if"
+            ],
+            [
+              22,
+              "putfield",
+              "c.a"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljava/lang/String;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 6,
+          "apis": {
+            "java/util/Hashtable.get": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              3,
+              "java/util/Hashtable.get"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "AmobaMIDlet.a"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 5,
+          "apis": {
+            "javax/microedition/lcdui/Display.getDisplay": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              3,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "startApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 28,
+          "apis": {
+            "javax/microedition/lcdui/Display.getDisplay": 3,
+            "javax/microedition/lcdui/Display.getCurrent": 1,
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              2,
+              "javax/microedition/lcdui/Display.getCurrent"
+            ],
+            [
+              15,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              16,
+              "java/lang/Thread.start"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              21,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              11,
+              "putfield",
+              "AmobaMIDlet.if"
+            ],
+            [
+              20,
+              "getfield",
+              "AmobaMIDlet.if"
+            ]
+          ]
+        },
+        {
+          "nome": "pauseApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "destroyApp",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              2,
+              "getfield",
+              "f.a"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 6,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+          },
+          "constantes": [
+            [
+              1,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/midlet/MIDlet.notifyDestroyed"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 138,
+          "apis": {
+            "java/util/Hashtable.<init>": 1,
+            "java/lang/Object.getClass": 1,
+            "java/lang/Class.getResourceAsStream": 1,
+            "java/io/InputStream.read": 2,
+            "java/lang/String.<init>": 2,
+            "java/lang/String.indexOf": 2,
+            "java/lang/String.length": 1,
+            "java/lang/System.arraycopy": 1,
+            "java/lang/String.substring": 2,
+            "java/util/Hashtable.put": 1,
+            "java/io/InputStream.close": 1
+          },
+          "constantes": [
+            [
+              10,
+              0
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              18,
+              501
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              39,
+              10
+            ],
+            [
+              43,
+              -1
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              73,
+              -1
+            ],
+            [
+              76,
+              1
+            ],
+            [
+              79,
+              0
+            ],
+            [
+              88,
+              0
+            ],
+            [
+              94,
+              44
+            ],
+            [
+              98,
+              -1
+            ],
+            [
+              109,
+              1
+            ],
+            [
+              120,
+              1
+            ],
+            [
+              124,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              3,
+              "java/util/Hashtable.<init>"
+            ],
+            [
+              6,
+              "java/lang/Object.getClass"
+            ],
+            [
+              8,
+              "java/lang/Class.getResourceAsStream"
+            ],
+            [
+              28,
+              "java/io/InputStream.read"
+            ],
+            [
+              35,
+              "java/lang/String.<init>"
+            ],
+            [
+              41,
+              "java/lang/String.indexOf"
+            ],
+            [
+              49,
+              "java/lang/String.length"
+            ],
+            [
+              63,
+              "java/lang/System.arraycopy"
+            ],
+            [
+              71,
+              "java/io/InputStream.read"
+            ],
+            [
+              90,
+              "java/lang/String.<init>"
+            ],
+            [
+              96,
+              "java/lang/String.indexOf"
+            ],
+            [
+              106,
+              "java/lang/String.substring"
+            ],
+            [
+              112,
+              "java/lang/String.substring"
+            ],
+            [
+              113,
+              "java/util/Hashtable.put"
+            ],
+            [
+              134,
+              "java/io/InputStream.close"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "AmobaMIDlet.a"
+            ],
+            [
+              102,
+              "getfield",
+              "AmobaMIDlet.a"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/midlet/MIDlet.<init>": 1,
+        "java/util/Hashtable.get": 1,
+        "javax/microedition/lcdui/Display.getDisplay": 4,
+        "javax/microedition/lcdui/Display.setCurrent": 3,
+        "javax/microedition/lcdui/Display.getCurrent": 1,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/midlet/MIDlet.notifyDestroyed": 1,
+        "java/util/Hashtable.<init>": 1,
+        "java/lang/Object.getClass": 1,
+        "java/lang/Class.getResourceAsStream": 1,
+        "java/io/InputStream.read": 2,
+        "java/lang/String.<init>": 2,
+        "java/lang/String.indexOf": 2,
+        "java/lang/String.length": 1,
+        "java/lang/System.arraycopy": 1,
+        "java/lang/String.substring": 2,
+        "java/util/Hashtable.put": 1,
+        "java/io/InputStream.close": 1
+      },
+      "padroes": [
+        "MIDLET",
+        "TEM_RUN",
+        "TEM_STARTAPP"
+      ]
+    },
+    {
+      "arquivo": "a.class",
+      "nome": "a",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "do",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljavax/microedition/rms/RecordStore;",
+          "tipo_c": "RecordStore*"
+        },
+        {
+          "nome": "a",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {
+            "java/lang/Object.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Object.<init>"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "if",
+          "desc": "(Ljava/lang/String;)V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "javax/microedition/rms/RecordStore.closeRecordStore": 1,
+            "javax/microedition/rms/RecordStore.openRecordStore": 1
+          },
+          "constantes": [
+            [
+              11,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              6,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ],
+            [
+              12,
+              "javax/microedition/rms/RecordStore.openRecordStore"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "a.if"
+            ],
+            [
+              5,
+              "getfield",
+              "a.if"
+            ],
+            [
+              13,
+              "putfield",
+              "a.if"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 7,
+          "apis": {
+            "javax/microedition/rms/RecordStore.closeRecordStore": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/rms/RecordStore.closeRecordStore"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "a.if"
+            ],
+            [
+              5,
+              "putfield",
+              "a.if"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljava/lang/String;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 32,
+          "apis": {
+            "javax/microedition/rms/RecordStore.enumerateRecords": 1,
+            "javax/microedition/rms/RecordEnumeration.hasNextElement": 1,
+            "javax/microedition/rms/RecordEnumeration.nextRecord": 1,
+            "java/lang/String.<init>": 1,
+            "javax/microedition/rms/RecordEnumeration.destroy": 1
+          },
+          "constantes": [
+            [
+              7,
+              0
+            ],
+            [
+              19,
+              10
+            ],
+            [
+              22,
+              10
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/rms/RecordStore.enumerateRecords"
+            ],
+            [
+              11,
+              "javax/microedition/rms/RecordEnumeration.hasNextElement"
+            ],
+            [
+              14,
+              "javax/microedition/rms/RecordEnumeration.nextRecord"
+            ],
+            [
+              24,
+              "java/lang/String.<init>"
+            ],
+            [
+              27,
+              "javax/microedition/rms/RecordEnumeration.destroy"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "a.a"
+            ],
+            [
+              4,
+              "getfield",
+              "a.if"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljava/lang/String;Ljava/lang/String;)V",
+          "tipo_ret": "void",
+          "n_instr": 53,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.setLength": 1,
+            "java/lang/StringBuffer.insert": 1,
+            "java/lang/StringBuffer.toString": 1,
+            "java/lang/String.getBytes": 1,
+            "javax/microedition/rms/RecordStore.enumerateRecords": 1,
+            "javax/microedition/rms/RecordEnumeration.hasNextElement": 1,
+            "javax/microedition/rms/RecordEnumeration.nextRecordId": 1,
+            "javax/microedition/rms/RecordStore.setRecord": 1,
+            "javax/microedition/rms/RecordEnumeration.destroy": 1,
+            "javax/microedition/rms/RecordStore.addRecord": 1
+          },
+          "constantes": [
+            [
+              6,
+              10
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              37,
+              0
+            ],
+            [
+              47,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              3,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              7,
+              "java/lang/StringBuffer.setLength"
+            ],
+            [
+              11,
+              "java/lang/StringBuffer.insert"
+            ],
+            [
+              14,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              15,
+              "java/lang/String.getBytes"
+            ],
+            [
+              25,
+              "javax/microedition/rms/RecordStore.enumerateRecords"
+            ],
+            [
+              28,
+              "javax/microedition/rms/RecordEnumeration.hasNextElement"
+            ],
+            [
+              31,
+              "javax/microedition/rms/RecordEnumeration.nextRecordId"
+            ],
+            [
+              40,
+              "javax/microedition/rms/RecordStore.setRecord"
+            ],
+            [
+              42,
+              "javax/microedition/rms/RecordEnumeration.destroy"
+            ],
+            [
+              50,
+              "javax/microedition/rms/RecordStore.addRecord"
+            ]
+          ],
+          "fields": [
+            [
+              19,
+              "putfield",
+              "a.a"
+            ],
+            [
+              21,
+              "getfield",
+              "a.if"
+            ],
+            [
+              34,
+              "getfield",
+              "a.if"
+            ],
+            [
+              45,
+              "getfield",
+              "a.if"
+            ]
+          ]
+        },
+        {
+          "nome": "matches",
+          "desc": "([B)Z",
+          "tipo_ret": "int",
+          "n_instr": 14,
+          "apis": {
+            "java/lang/String.<init>": 1,
+            "java/lang/String.trim": 1,
+            "java/lang/String.startsWith": 1
+          },
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              11,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              5,
+              "java/lang/String.<init>"
+            ],
+            [
+              6,
+              "java/lang/String.trim"
+            ],
+            [
+              12,
+              "java/lang/String.startsWith"
+            ]
+          ],
+          "fields": [
+            [
+              10,
+              "getfield",
+              "a.a"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "java/lang/Object.<init>": 1,
+        "javax/microedition/rms/RecordStore.closeRecordStore": 2,
+        "javax/microedition/rms/RecordStore.openRecordStore": 1,
+        "javax/microedition/rms/RecordStore.enumerateRecords": 2,
+        "javax/microedition/rms/RecordEnumeration.hasNextElement": 2,
+        "javax/microedition/rms/RecordEnumeration.nextRecord": 1,
+        "java/lang/String.<init>": 2,
+        "javax/microedition/rms/RecordEnumeration.destroy": 2,
+        "java/lang/StringBuffer.<init>": 1,
+        "java/lang/StringBuffer.setLength": 1,
+        "java/lang/StringBuffer.insert": 1,
+        "java/lang/StringBuffer.toString": 1,
+        "java/lang/String.getBytes": 1,
+        "javax/microedition/rms/RecordEnumeration.nextRecordId": 1,
+        "javax/microedition/rms/RecordStore.setRecord": 1,
+        "javax/microedition/rms/RecordStore.addRecord": 1,
+        "java/lang/String.trim": 1,
+        "java/lang/String.startsWith": 1
+      },
+      "padroes": []
+    },
+    {
+      "arquivo": "b$a.class",
+      "nome": "b$a",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(II)V",
+          "tipo_ret": "void",
+          "n_instr": 9,
+          "apis": {
+            "java/lang/Object.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Object.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "b$a.a"
+            ],
+            [
+              7,
+              "putfield",
+              "b$a.if"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "java/lang/Object.<init>": 1
+      },
+      "padroes": []
+    },
+    {
+      "arquivo": "b.class",
+      "nome": "b",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "m",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "int",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "u",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "h",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "w",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "null",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "f",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "o",
+          "desc": "B",
+          "tipo_c": "signed char"
+        },
+        {
+          "nome": "long",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "e",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "c",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "s",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "d",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "y",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "j",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "byte",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "void",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "r",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "t",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "C",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "l",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "z",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "k",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "b",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "for",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "D",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "try",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "new",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "do",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "else",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "char",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "goto",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "g",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "case",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "n",
+          "desc": "[B",
+          "tipo_c": "signed char*"
+        },
+        {
+          "nome": "B",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "x",
+          "desc": "Ljava/util/Random;",
+          "tipo_c": "Random*"
+        },
+        {
+          "nome": "q",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "v",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "i",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "A",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "p",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(II)V",
+          "tipo_ret": "void",
+          "n_instr": 116,
+          "apis": {
+            "java/lang/Object.<init>": 1,
+            "java/util/Random.<init>": 1,
+            "javax/microedition/lcdui/Image.createImage": 1
+          },
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              15,
+              8
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              27,
+              3
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              45,
+              3
+            ],
+            [
+              48,
+              7
+            ],
+            [
+              51,
+              0
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              56,
+              0
+            ],
+            [
+              59,
+              2
+            ],
+            [
+              60,
+              565
+            ],
+            [
+              63,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Object.<init>"
+            ],
+            [
+              91,
+              "java/util/Random.<init>"
+            ],
+            [
+              109,
+              "javax/microedition/lcdui/Image.createImage"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "b.null"
+            ],
+            [
+              7,
+              "putfield",
+              "b.f"
+            ],
+            [
+              10,
+              "putfield",
+              "b.o"
+            ],
+            [
+              13,
+              "putfield",
+              "b.long"
+            ],
+            [
+              16,
+              "putfield",
+              "b.e"
+            ],
+            [
+              19,
+              "putfield",
+              "b.c"
+            ],
+            [
+              22,
+              "putfield",
+              "b.s"
+            ],
+            [
+              25,
+              "putfield",
+              "b.d"
+            ],
+            [
+              28,
+              "putfield",
+              "b.y"
+            ],
+            [
+              31,
+              "putfield",
+              "b.j"
+            ],
+            [
+              34,
+              "putfield",
+              "b.byte"
+            ],
+            [
+              37,
+              "putfield",
+              "b.void"
+            ],
+            [
+              40,
+              "putfield",
+              "b.r"
+            ],
+            [
+              43,
+              "putfield",
+              "b.t"
+            ],
+            [
+              46,
+              "putfield",
+              "b.C"
+            ],
+            [
+              78,
+              "putfield",
+              "b.l"
+            ],
+            [
+              81,
+              "putfield",
+              "b.k"
+            ],
+            [
+              84,
+              "putfield",
+              "b.for"
+            ],
+            [
+              87,
+              "putfield",
+              "b.D"
+            ],
+            [
+              92,
+              "putfield",
+              "b.x"
+            ]
+          ]
+        },
+        {
+          "nome": "int",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 119,
+          "apis": {
+            "javax/microedition/lcdui/Image.getGraphics": 1
+          },
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              31,
+              4
+            ],
+            [
+              48,
+              4
+            ],
+            [
+              53,
+              4
+            ],
+            [
+              58,
+              4
+            ],
+            [
+              62,
+              4
+            ],
+            [
+              71,
+              2
+            ],
+            [
+              77,
+              2
+            ],
+            [
+              94,
+              1
+            ],
+            [
+              105,
+              2
+            ],
+            [
+              114,
+              2
+            ]
+          ],
+          "chamadas": [
+            [
+              82,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "b.D"
+            ],
+            [
+              5,
+              "getfield",
+              "b.for"
+            ],
+            [
+              6,
+              "putfield",
+              "b.b"
+            ],
+            [
+              8,
+              "getfield",
+              "b.b"
+            ],
+            [
+              9,
+              "putstatic",
+              "b.v"
+            ],
+            [
+              12,
+              "getfield",
+              "b.b"
+            ],
+            [
+              14,
+              "putstatic",
+              "b.i"
+            ],
+            [
+              15,
+              "getstatic",
+              "b.i"
+            ],
+            [
+              17,
+              "getfield",
+              "b.b"
+            ],
+            [
+              19,
+              "putstatic",
+              "b.A"
+            ],
+            [
+              21,
+              "getfield",
+              "b.b"
+            ],
+            [
+              23,
+              "getfield",
+              "b.b"
+            ],
+            [
+              25,
+              "putstatic",
+              "b.p"
+            ],
+            [
+              32,
+              "putfield",
+              "b.D"
+            ],
+            [
+              35,
+              "putfield",
+              "b.a"
+            ],
+            [
+              38,
+              "putfield",
+              "b.n"
+            ],
+            [
+              41,
+              "putfield",
+              "b.B"
+            ],
+            [
+              44,
+              "putfield",
+              "b.q"
+            ],
+            [
+              50,
+              "getfield",
+              "b.b"
+            ],
+            [
+              52,
+              "getfield",
+              "b.b"
+            ]
+          ]
+        },
+        {
+          "nome": "byte",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 67,
+          "apis": {
+            "javax/microedition/lcdui/Image.createImage": 1,
+            "java/lang/Runtime.getRuntime": 1,
+            "java/lang/Runtime.freeMemory": 1,
+            "java/lang/OutOfMemoryError.<init>": 1
+          },
+          "constantes": [
+            [
+              21,
+              4
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              38,
+              2
+            ],
+            [
+              45,
+              8
+            ],
+            [
+              47,
+              3
+            ],
+            [
+              51,
+              8
+            ],
+            [
+              53,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              55,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              57,
+              "java/lang/Runtime.getRuntime"
+            ],
+            [
+              58,
+              "java/lang/Runtime.freeMemory"
+            ],
+            [
+              64,
+              "java/lang/OutOfMemoryError.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "b.a"
+            ],
+            [
+              5,
+              "putfield",
+              "b.n"
+            ],
+            [
+              8,
+              "putfield",
+              "b.B"
+            ],
+            [
+              11,
+              "putfield",
+              "b.q"
+            ],
+            [
+              14,
+              "getfield",
+              "b.b"
+            ],
+            [
+              16,
+              "getfield",
+              "b.b"
+            ],
+            [
+              19,
+              "putfield",
+              "b.a"
+            ],
+            [
+              23,
+              "getfield",
+              "b.b"
+            ],
+            [
+              26,
+              "getfield",
+              "b.b"
+            ],
+            [
+              31,
+              "putfield",
+              "b.n"
+            ],
+            [
+              34,
+              "getfield",
+              "b.b"
+            ],
+            [
+              36,
+              "getfield",
+              "b.b"
+            ],
+            [
+              41,
+              "putfield",
+              "b.B"
+            ],
+            [
+              44,
+              "getfield",
+              "b.b"
+            ],
+            [
+              50,
+              "getfield",
+              "b.b"
+            ],
+            [
+              56,
+              "putfield",
+              "b.q"
+            ]
+          ]
+        },
+        {
+          "nome": "new",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.for"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "b.for"
+            ]
+          ]
+        },
+        {
+          "nome": "do",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.k"
+            ]
+          ]
+        },
+        {
+          "nome": "do",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "b.k"
+            ]
+          ]
+        },
+        {
+          "nome": "for",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 52,
+          "apis": {
+            "java/lang/Integer.parseInt": 2
+          },
+          "constantes": [
+            [
+              18,
+              0
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              42,
+              5
+            ],
+            [
+              45,
+              5
+            ]
+          ],
+          "chamadas": [
+            [
+              16,
+              "java/lang/Integer.parseInt"
+            ],
+            [
+              38,
+              "java/lang/Integer.parseInt"
+            ]
+          ],
+          "fields": [
+            [
+              17,
+              "putfield",
+              "b.k"
+            ],
+            [
+              20,
+              "getfield",
+              "b.k"
+            ],
+            [
+              24,
+              "getfield",
+              "b.k"
+            ],
+            [
+              28,
+              "putfield",
+              "b.k"
+            ],
+            [
+              39,
+              "putfield",
+              "b.for"
+            ],
+            [
+              41,
+              "getfield",
+              "b.for"
+            ],
+            [
+              46,
+              "putfield",
+              "b.for"
+            ]
+          ]
+        },
+        {
+          "nome": "try",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 24,
+          "apis": {
+            "java/lang/String.valueOf": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              11,
+              "java/lang/String.valueOf"
+            ],
+            [
+              17,
+              "java/lang/String.valueOf"
+            ]
+          ],
+          "fields": [
+            [
+              10,
+              "getfield",
+              "b.k"
+            ],
+            [
+              16,
+              "getfield",
+              "b.for"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(II)I",
+          "tipo_ret": "int",
+          "n_instr": 6,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "b.v"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(IIII)I",
+          "tipo_ret": "int",
+          "n_instr": 14,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              4
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              5,
+              "getstatic",
+              "b.i"
+            ],
+            [
+              9,
+              "getstatic",
+              "b.A"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(III)I",
+          "tipo_ret": "int",
+          "n_instr": 10,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "b.v"
+            ],
+            [
+              5,
+              "getstatic",
+              "b.p"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "()Lb$a;",
+          "tipo_ret": "b$a*",
+          "n_instr": 106,
+          "apis": {
+            "java/util/Random.nextInt": 1
+          },
+          "constantes": [
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              24,
+              4
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              31,
+              0
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              37,
+              0
+            ],
+            [
+              40,
+              0
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              55,
+              2
+            ],
+            [
+              66,
+              19
+            ],
+            [
+              68,
+              16
+            ]
+          ],
+          "chamadas": [
+            [
+              54,
+              "java/util/Random.nextInt"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "b.b"
+            ],
+            [
+              10,
+              "getfield",
+              "b.b"
+            ],
+            [
+              18,
+              "getfield",
+              "b.a"
+            ],
+            [
+              48,
+              "getfield",
+              "b.a"
+            ],
+            [
+              53,
+              "getfield",
+              "b.x"
+            ],
+            [
+              63,
+              "getfield",
+              "b.B"
+            ],
+            [
+              71,
+              "getfield",
+              "b.B"
+            ],
+            [
+              93,
+              "getfield",
+              "b.b"
+            ],
+            [
+              98,
+              "getfield",
+              "b.b"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(III)V",
+          "tipo_ret": "void",
+          "n_instr": 205,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              43,
+              5
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              56,
+              0
+            ],
+            [
+              62,
+              4
+            ],
+            [
+              65,
+              0
+            ],
+            [
+              71,
+              4
+            ],
+            [
+              76,
+              2
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              85,
+              2
+            ],
+            [
+              97,
+              5
+            ],
+            [
+              101,
+              5
+            ],
+            [
+              103,
+              0
+            ],
+            [
+              114,
+              4
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              14,
+              "getfield",
+              "b.b"
+            ],
+            [
+              61,
+              "getfield",
+              "b.b"
+            ],
+            [
+              70,
+              "getfield",
+              "b.b"
+            ],
+            [
+              119,
+              "getfield",
+              "b.b"
+            ],
+            [
+              126,
+              "getfield",
+              "b.b"
+            ],
+            [
+              173,
+              "getfield",
+              "b.b"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(IIII)V",
+          "tipo_ret": "void",
+          "n_instr": 47,
+          "apis": {},
+          "constantes": [
+            [
+              9,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              31,
+              5
+            ],
+            [
+              34,
+              0
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42,
+              2
+            ],
+            [
+              44,
+              3
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.n"
+            ],
+            [
+              20,
+              "getfield",
+              "b.case"
+            ],
+            [
+              23,
+              "putfield",
+              "b.case"
+            ],
+            [
+              26,
+              "getfield",
+              "b.case"
+            ],
+            [
+              30,
+              "putfield",
+              "b.D"
+            ],
+            [
+              36,
+              "getfield",
+              "b.D"
+            ],
+            [
+              45,
+              "putfield",
+              "b.D"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(IIIIII)V",
+          "tipo_ret": "void",
+          "n_instr": 98,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              4
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              64,
+              1
+            ],
+            [
+              92,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              5,
+              "getstatic",
+              "b.i"
+            ],
+            [
+              11,
+              "getstatic",
+              "b.A"
+            ],
+            [
+              17,
+              "getstatic",
+              "b.A"
+            ],
+            [
+              26,
+              "getfield",
+              "b.n"
+            ],
+            [
+              31,
+              "getfield",
+              "b.B"
+            ],
+            [
+              33,
+              "getfield",
+              "b.b"
+            ],
+            [
+              38,
+              "getstatic",
+              "b.p"
+            ],
+            [
+              45,
+              "getfield",
+              "b.l"
+            ],
+            [
+              47,
+              "getfield",
+              "b.n"
+            ],
+            [
+              54,
+              "getfield",
+              "b.l"
+            ],
+            [
+              56,
+              "getfield",
+              "b.n"
+            ],
+            [
+              66,
+              "getfield",
+              "b.n"
+            ],
+            [
+              71,
+              "getfield",
+              "b.B"
+            ],
+            [
+              73,
+              "getfield",
+              "b.b"
+            ],
+            [
+              78,
+              "getstatic",
+              "b.p"
+            ],
+            [
+              87,
+              "getfield",
+              "b.l"
+            ],
+            [
+              89,
+              "getfield",
+              "b.n"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(I)I",
+          "tipo_ret": "int",
+          "n_instr": 7,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "(II)V",
+          "tipo_ret": "void",
+          "n_instr": 80,
+          "apis": {
+            "javax/microedition/lcdui/Image.getGraphics": 1
+          },
+          "constantes": [
+            [
+              0,
+              4
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              56,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              63,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "b.D"
+            ],
+            [
+              7,
+              "getfield",
+              "b.try"
+            ],
+            [
+              8,
+              "putfield",
+              "b.do"
+            ],
+            [
+              11,
+              "getfield",
+              "b.try"
+            ],
+            [
+              14,
+              "putfield",
+              "b.try"
+            ],
+            [
+              16,
+              "getfield",
+              "b.try"
+            ],
+            [
+              20,
+              "putfield",
+              "b.try"
+            ],
+            [
+              22,
+              "getfield",
+              "b.try"
+            ],
+            [
+              24,
+              "getfield",
+              "b.b"
+            ],
+            [
+              28,
+              "getfield",
+              "b.b"
+            ],
+            [
+              31,
+              "putfield",
+              "b.try"
+            ],
+            [
+              34,
+              "getfield",
+              "b.new"
+            ],
+            [
+              35,
+              "putfield",
+              "b.if"
+            ],
+            [
+              38,
+              "getfield",
+              "b.new"
+            ],
+            [
+              41,
+              "putfield",
+              "b.new"
+            ],
+            [
+              43,
+              "getfield",
+              "b.new"
+            ],
+            [
+              47,
+              "putfield",
+              "b.new"
+            ],
+            [
+              49,
+              "getfield",
+              "b.new"
+            ],
+            [
+              51,
+              "getfield",
+              "b.b"
+            ],
+            [
+              55,
+              "getfield",
+              "b.b"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Canvas;)Z",
+          "tipo_ret": "int",
+          "n_instr": 48,
+          "apis": {
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 1,
+            "java/lang/Thread.yield": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              40,
+              0
+            ],
+            [
+              46,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              27,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              37,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              38,
+              "java/lang/Thread.yield"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "b.D"
+            ],
+            [
+              6,
+              "getfield",
+              "b.a"
+            ],
+            [
+              8,
+              "getfield",
+              "b.try"
+            ],
+            [
+              10,
+              "getfield",
+              "b.new"
+            ],
+            [
+              17,
+              "getfield",
+              "b.a"
+            ],
+            [
+              19,
+              "getfield",
+              "b.try"
+            ],
+            [
+              21,
+              "getfield",
+              "b.new"
+            ],
+            [
+              26,
+              "getfield",
+              "b.q"
+            ],
+            [
+              32,
+              "getfield",
+              "b.try"
+            ],
+            [
+              34,
+              "getfield",
+              "b.new"
+            ],
+            [
+              42,
+              "getfield",
+              "b.try"
+            ],
+            [
+              44,
+              "getfield",
+              "b.new"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 61,
+          "apis": {
+            "javax/microedition/lcdui/Image.getGraphics": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              22,
+              2
+            ]
+          ],
+          "chamadas": [
+            [
+              44,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "b.D"
+            ],
+            [
+              11,
+              "getfield",
+              "b$a.a"
+            ],
+            [
+              13,
+              "getfield",
+              "b$a.if"
+            ],
+            [
+              16,
+              "getfield",
+              "b.a"
+            ],
+            [
+              18,
+              "getfield",
+              "b$a.a"
+            ],
+            [
+              20,
+              "getfield",
+              "b$a.if"
+            ],
+            [
+              26,
+              "getfield",
+              "b.try"
+            ],
+            [
+              27,
+              "putfield",
+              "b.do"
+            ],
+            [
+              30,
+              "getfield",
+              "b.new"
+            ],
+            [
+              31,
+              "putfield",
+              "b.if"
+            ],
+            [
+              34,
+              "getfield",
+              "b$a.a"
+            ],
+            [
+              35,
+              "putfield",
+              "b.try"
+            ],
+            [
+              38,
+              "getfield",
+              "b$a.if"
+            ],
+            [
+              39,
+              "putfield",
+              "b.new"
+            ],
+            [
+              43,
+              "getfield",
+              "b.q"
+            ],
+            [
+              49,
+              "getfield",
+              "b.do"
+            ],
+            [
+              51,
+              "getfield",
+              "b.if"
+            ],
+            [
+              56,
+              "getfield",
+              "b.try"
+            ],
+            [
+              58,
+              "getfield",
+              "b.new"
+            ]
+          ]
+        },
+        {
+          "nome": "case",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.D"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 113,
+          "apis": {
+            "javax/microedition/lcdui/Image.getWidth": 1,
+            "javax/microedition/lcdui/Image.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawLine": 6
+          },
+          "constantes": [
+            [
+              9,
+              255
+            ],
+            [
+              10,
+              255
+            ],
+            [
+              11,
+              255
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              21,
+              0
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              36,
+              8
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              42,
+              8
+            ],
+            [
+              55,
+              8
+            ],
+            [
+              57,
+              2
+            ],
+            [
+              59,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Image.getWidth"
+            ],
+            [
+              6,
+              "javax/microedition/lcdui/Image.getHeight"
+            ],
+            [
+              12,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              29,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              46,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              67,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              73,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              90,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              111,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.q"
+            ],
+            [
+              5,
+              "getfield",
+              "b.q"
+            ],
+            [
+              50,
+              "getfield",
+              "b.b"
+            ],
+            [
+              54,
+              "getfield",
+              "b.b"
+            ],
+            [
+              61,
+              "getfield",
+              "b.b"
+            ],
+            [
+              94,
+              "getfield",
+              "b.b"
+            ],
+            [
+              99,
+              "getfield",
+              "b.b"
+            ],
+            [
+              106,
+              "getfield",
+              "b.b"
+            ]
+          ]
+        },
+        {
+          "nome": "char",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 53,
+          "apis": {},
+          "constantes": [
+            [
+              23,
+              1
+            ],
+            [
+              49,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.else"
+            ],
+            [
+              3,
+              "getfield",
+              "b.try"
+            ],
+            [
+              7,
+              "getfield",
+              "b.try"
+            ],
+            [
+              8,
+              "putfield",
+              "b.else"
+            ],
+            [
+              10,
+              "getfield",
+              "b.else"
+            ],
+            [
+              12,
+              "getfield",
+              "b.goto"
+            ],
+            [
+              15,
+              "getfield",
+              "b.try"
+            ],
+            [
+              19,
+              "getfield",
+              "b.try"
+            ],
+            [
+              21,
+              "getfield",
+              "b.goto"
+            ],
+            [
+              25,
+              "putfield",
+              "b.else"
+            ],
+            [
+              27,
+              "getfield",
+              "b.char"
+            ],
+            [
+              29,
+              "getfield",
+              "b.new"
+            ],
+            [
+              33,
+              "getfield",
+              "b.new"
+            ],
+            [
+              34,
+              "putfield",
+              "b.char"
+            ],
+            [
+              36,
+              "getfield",
+              "b.char"
+            ],
+            [
+              38,
+              "getfield",
+              "b.g"
+            ],
+            [
+              41,
+              "getfield",
+              "b.new"
+            ],
+            [
+              45,
+              "getfield",
+              "b.new"
+            ],
+            [
+              47,
+              "getfield",
+              "b.g"
+            ],
+            [
+              51,
+              "putfield",
+              "b.char"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 37,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setClip": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              0,
+              4
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              16,
+              8
+            ],
+            [
+              18,
+              3
+            ],
+            [
+              27,
+              8
+            ],
+            [
+              32,
+              8
+            ],
+            [
+              34,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              20,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              35,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "b.D"
+            ],
+            [
+              9,
+              "getfield",
+              "b.goto"
+            ],
+            [
+              15,
+              "getfield",
+              "b.g"
+            ],
+            [
+              23,
+              "getfield",
+              "b.q"
+            ],
+            [
+              25,
+              "getfield",
+              "b.else"
+            ],
+            [
+              30,
+              "getfield",
+              "b.char"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;II)V",
+          "tipo_ret": "void",
+          "n_instr": 110,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.setClip": 2,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 4
+          },
+          "constantes": [
+            [
+              8,
+              1
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              8
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              22,
+              8
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              31,
+              0
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              37,
+              255
+            ],
+            [
+              38,
+              255
+            ],
+            [
+              39,
+              255
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              45,
+              7
+            ],
+            [
+              50,
+              7
+            ],
+            [
+              51,
+              7
+            ],
+            [
+              58,
+              5
+            ],
+            [
+              59,
+              5
+            ]
+          ],
+          "chamadas": [
+            [
+              34,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              40,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              46,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              52,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              60,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              78,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              86,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              98,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              108,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "b.try"
+            ],
+            [
+              5,
+              "getfield",
+              "b.new"
+            ],
+            [
+              62,
+              "getfield",
+              "b.a"
+            ],
+            [
+              72,
+              "getfield",
+              "b.z"
+            ],
+            [
+              82,
+              "getfield",
+              "b.z"
+            ],
+            [
+              92,
+              "getfield",
+              "b.z"
+            ],
+            [
+              102,
+              "getfield",
+              "b.z"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "java/lang/Object.<init>": 1,
+        "java/util/Random.<init>": 1,
+        "javax/microedition/lcdui/Image.createImage": 2,
+        "javax/microedition/lcdui/Image.getGraphics": 4,
+        "java/lang/Runtime.getRuntime": 1,
+        "java/lang/Runtime.freeMemory": 1,
+        "java/lang/OutOfMemoryError.<init>": 1,
+        "java/lang/Integer.parseInt": 2,
+        "java/lang/String.valueOf": 2,
+        "java/util/Random.nextInt": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 1,
+        "java/lang/Thread.yield": 1,
+        "javax/microedition/lcdui/Image.getWidth": 1,
+        "javax/microedition/lcdui/Image.getHeight": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 4,
+        "javax/microedition/lcdui/Graphics.fillRect": 2,
+        "javax/microedition/lcdui/Graphics.drawLine": 6,
+        "javax/microedition/lcdui/Graphics.setClip": 3,
+        "javax/microedition/lcdui/Graphics.drawImage": 5
+      },
+      "padroes": [
+        "CANVAS",
+        "USA_IMAGE"
+      ]
+    },
+    {
+      "arquivo": "c.class",
+      "nome": "c",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "int",
+          "desc": "LAmobaMIDlet;",
+          "tipo_c": "AmobaMIDlet*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "for",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "if",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "new",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LAmobaMIDlet;)V",
+          "tipo_ret": "void",
+          "n_instr": 23,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "javax/microedition/lcdui/Image.createImage": 2,
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              7,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              11,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              18,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              19,
+              "java/lang/Thread.start"
+            ],
+            [
+              21,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "c.int"
+            ],
+            [
+              8,
+              "putfield",
+              "c.do"
+            ],
+            [
+              12,
+              "putfield",
+              "c.for"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 54,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.repaint": 1,
+            "java/lang/Thread.sleep": 2
+          },
+          "constantes": [
+            [
+              10,
+              1
+            ],
+            [
+              21,
+              9
+            ],
+            [
+              37,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              4,
+              "java/lang/Thread.sleep"
+            ],
+            [
+              27,
+              "java/lang/Thread.sleep"
+            ]
+          ],
+          "fields": [
+            [
+              9,
+              "getfield",
+              "c.new"
+            ],
+            [
+              12,
+              "putfield",
+              "c.new"
+            ],
+            [
+              14,
+              "getfield",
+              "c.if"
+            ],
+            [
+              17,
+              "getfield",
+              "c.a"
+            ],
+            [
+              20,
+              "getfield",
+              "c.new"
+            ],
+            [
+              24,
+              "getfield",
+              "c.if"
+            ],
+            [
+              35,
+              "getfield",
+              "c.int"
+            ],
+            [
+              36,
+              "getfield",
+              "AmobaMIDlet.do"
+            ],
+            [
+              40,
+              "getfield",
+              "c.int"
+            ],
+            [
+              42,
+              "getfield",
+              "c.int"
+            ],
+            [
+              43,
+              "getfield",
+              "AmobaMIDlet.do"
+            ]
+          ]
+        },
+        {
+          "nome": "keyReleased",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "c.if"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 67,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Image.getWidth": 1,
+            "javax/microedition/lcdui/Image.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 2,
+            "javax/microedition/lcdui/Graphics.setClip": 1
+          },
+          "constantes": [
+            [
+              7,
+              255
+            ],
+            [
+              8,
+              255
+            ],
+            [
+              9,
+              255
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              30,
+              2
+            ],
+            [
+              38,
+              20
+            ],
+            [
+              42,
+              41
+            ],
+            [
+              45,
+              12
+            ],
+            [
+              47,
+              20
+            ],
+            [
+              48,
+              15
+            ],
+            [
+              54,
+              41
+            ],
+            [
+              58,
+              20
+            ],
+            [
+              62,
+              12
+            ],
+            [
+              64,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              20,
+              "javax/microedition/lcdui/Image.getWidth"
+            ],
+            [
+              28,
+              "javax/microedition/lcdui/Image.getHeight"
+            ],
+            [
+              39,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              49,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              65,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              19,
+              "getfield",
+              "c.do"
+            ],
+            [
+              27,
+              "getfield",
+              "c.do"
+            ],
+            [
+              35,
+              "getfield",
+              "c.do"
+            ],
+            [
+              52,
+              "getfield",
+              "c.for"
+            ],
+            [
+              57,
+              "getfield",
+              "c.new"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Image.createImage": 2,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 2,
+        "java/lang/Thread.sleep": 2,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 1,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Image.getWidth": 1,
+        "javax/microedition/lcdui/Image.getHeight": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 2,
+        "javax/microedition/lcdui/Graphics.setClip": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_RUN",
+        "USA_IMAGE"
+      ]
+    },
+    {
+      "arquivo": "d.class",
+      "nome": "d",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "byte",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "a",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "new",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "int",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "for",
+          "desc": "LAmobaMIDlet;",
+          "tipo_c": "AmobaMIDlet*"
+        },
+        {
+          "nome": "try",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LAmobaMIDlet;)V",
+          "tipo_ret": "void",
+          "n_instr": 106,
+          "apis": {
+            "javax/microedition/lcdui/List.<init>": 1,
+            "javax/microedition/lcdui/List.append": 5,
+            "javax/microedition/lcdui/Command.<init>": 1,
+            "javax/microedition/lcdui/Displayable.addCommand": 1,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1
+          },
+          "constantes": [
+            [
+              4,
+              3
+            ],
+            [
+              94,
+              4
+            ],
+            [
+              95,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              5,
+              "javax/microedition/lcdui/List.<init>"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              47,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              58,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              69,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              80,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              96,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              101,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              104,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              8,
+              "putfield",
+              "d.byte"
+            ],
+            [
+              11,
+              "putfield",
+              "d.do"
+            ],
+            [
+              14,
+              "putfield",
+              "d.a"
+            ],
+            [
+              17,
+              "putfield",
+              "d.new"
+            ],
+            [
+              20,
+              "putfield",
+              "d.int"
+            ],
+            [
+              23,
+              "putfield",
+              "d.if"
+            ],
+            [
+              26,
+              "putfield",
+              "d.for"
+            ],
+            [
+              31,
+              "getfield",
+              "d.byte"
+            ],
+            [
+              34,
+              "putfield",
+              "d.byte"
+            ],
+            [
+              42,
+              "getfield",
+              "d.a"
+            ],
+            [
+              45,
+              "putfield",
+              "d.a"
+            ],
+            [
+              53,
+              "getfield",
+              "d.new"
+            ],
+            [
+              56,
+              "putfield",
+              "d.new"
+            ],
+            [
+              64,
+              "getfield",
+              "d.int"
+            ],
+            [
+              67,
+              "putfield",
+              "d.int"
+            ],
+            [
+              75,
+              "getfield",
+              "d.if"
+            ],
+            [
+              78,
+              "putfield",
+              "d.if"
+            ],
+            [
+              85,
+              "getfield",
+              "d.do"
+            ],
+            [
+              87,
+              "putfield",
+              "d.do"
+            ],
+            [
+              97,
+              "putfield",
+              "d.try"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 31,
+          "apis": {
+            "javax/microedition/lcdui/List.getString": 2,
+            "java/lang/String.equals": 2,
+            "javax/microedition/lcdui/List.insert": 1,
+            "javax/microedition/lcdui/List.setSelectedIndex": 1,
+            "javax/microedition/lcdui/List.delete": 1
+          },
+          "constantes": [
+            [
+              3,
+              1
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              28,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              7,
+              "java/lang/String.equals"
+            ],
+            [
+              14,
+              "javax/microedition/lcdui/List.insert"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/List.setSelectedIndex"
+            ],
+            [
+              22,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              25,
+              "java/lang/String.equals"
+            ],
+            [
+              29,
+              "javax/microedition/lcdui/List.delete"
+            ]
+          ],
+          "fields": [
+            [
+              6,
+              "getfield",
+              "d.do"
+            ],
+            [
+              12,
+              "getfield",
+              "d.do"
+            ],
+            [
+              24,
+              "getfield",
+              "d.do"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 126,
+          "apis": {
+            "javax/microedition/lcdui/List.getSelectedIndex": 1,
+            "javax/microedition/lcdui/List.getString": 1,
+            "java/lang/String.equals": 6,
+            "javax/microedition/lcdui/Alert.<init>": 2,
+            "javax/microedition/lcdui/Alert.setTimeout": 1
+          },
+          "constantes": [
+            [
+              22,
+              0
+            ],
+            [
+              37,
+              -2
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/List.getSelectedIndex"
+            ],
+            [
+              3,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              12,
+              "java/lang/String.equals"
+            ],
+            [
+              34,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/Alert.setTimeout"
+            ],
+            [
+              54,
+              "java/lang/String.equals"
+            ],
+            [
+              66,
+              "java/lang/String.equals"
+            ],
+            [
+              75,
+              "java/lang/String.equals"
+            ],
+            [
+              89,
+              "java/lang/String.equals"
+            ],
+            [
+              103,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              113,
+              "java/lang/String.equals"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "d.try"
+            ],
+            [
+              11,
+              "getfield",
+              "d.byte"
+            ],
+            [
+              15,
+              "getfield",
+              "d.for"
+            ],
+            [
+              16,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              17,
+              "getfield",
+              "f.a"
+            ],
+            [
+              27,
+              "getfield",
+              "d.byte"
+            ],
+            [
+              29,
+              "getfield",
+              "d.for"
+            ],
+            [
+              33,
+              "getstatic",
+              "AlertType.ERROR"
+            ],
+            [
+              40,
+              "getfield",
+              "d.for"
+            ],
+            [
+              45,
+              "getfield",
+              "d.for"
+            ],
+            [
+              47,
+              "getfield",
+              "d.for"
+            ],
+            [
+              48,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              53,
+              "getfield",
+              "d.do"
+            ],
+            [
+              57,
+              "getfield",
+              "d.for"
+            ],
+            [
+              59,
+              "getfield",
+              "d.for"
+            ],
+            [
+              60,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              65,
+              "getfield",
+              "d.new"
+            ],
+            [
+              69,
+              "getfield",
+              "d.for"
+            ],
+            [
+              74,
+              "getfield",
+              "d.a"
+            ],
+            [
+              78,
+              "getfield",
+              "d.for"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/List.<init>": 1,
+        "javax/microedition/lcdui/List.append": 5,
+        "javax/microedition/lcdui/Command.<init>": 1,
+        "javax/microedition/lcdui/Displayable.addCommand": 1,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+        "javax/microedition/lcdui/List.getString": 3,
+        "java/lang/String.equals": 8,
+        "javax/microedition/lcdui/List.insert": 1,
+        "javax/microedition/lcdui/List.setSelectedIndex": 1,
+        "javax/microedition/lcdui/List.delete": 1,
+        "javax/microedition/lcdui/List.getSelectedIndex": 1,
+        "javax/microedition/lcdui/Alert.<init>": 2,
+        "javax/microedition/lcdui/Alert.setTimeout": 1
+      },
+      "padroes": []
+    },
+    {
+      "arquivo": "e.class",
+      "nome": "e",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "for",
+          "desc": "LAmobaMIDlet;",
+          "tipo_c": "AmobaMIDlet*"
+        },
+        {
+          "nome": "a",
+          "desc": "Ljavax/microedition/lcdui/ChoiceGroup;",
+          "tipo_c": "ChoiceGroup*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljavax/microedition/lcdui/TextField;",
+          "tipo_c": "TextField*"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "int",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LAmobaMIDlet;)V",
+          "tipo_ret": "void",
+          "n_instr": 98,
+          "apis": {
+            "javax/microedition/lcdui/Form.<init>": 1,
+            "javax/microedition/lcdui/ChoiceGroup.<init>": 1,
+            "javax/microedition/lcdui/ChoiceGroup.append": 2,
+            "javax/microedition/lcdui/ChoiceGroup.setSelectedIndex": 1,
+            "javax/microedition/lcdui/Form.append": 2,
+            "java/lang/String.valueOf": 1,
+            "javax/microedition/lcdui/TextField.<init>": 1,
+            "javax/microedition/lcdui/Command.<init>": 2,
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1
+          },
+          "constantes": [
+            [
+              14,
+              1
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              57,
+              2
+            ],
+            [
+              58,
+              2
+            ],
+            [
+              72,
+              4
+            ],
+            [
+              73,
+              1
+            ],
+            [
+              86,
+              3
+            ],
+            [
+              87,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Form.<init>"
+            ],
+            [
+              15,
+              "javax/microedition/lcdui/ChoiceGroup.<init>"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/ChoiceGroup.append"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/ChoiceGroup.append"
+            ],
+            [
+              40,
+              "javax/microedition/lcdui/ChoiceGroup.setSelectedIndex"
+            ],
+            [
+              44,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              56,
+              "java/lang/String.valueOf"
+            ],
+            [
+              59,
+              "javax/microedition/lcdui/TextField.<init>"
+            ],
+            [
+              64,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              74,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              79,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              88,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              93,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              96,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "putfield",
+              "e.for"
+            ],
+            [
+              16,
+              "putfield",
+              "e.a"
+            ],
+            [
+              18,
+              "getfield",
+              "e.a"
+            ],
+            [
+              26,
+              "getfield",
+              "e.a"
+            ],
+            [
+              34,
+              "getfield",
+              "e.a"
+            ],
+            [
+              36,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              37,
+              "getfield",
+              "f.a"
+            ],
+            [
+              43,
+              "getfield",
+              "e.a"
+            ],
+            [
+              53,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              54,
+              "getfield",
+              "f.a"
+            ],
+            [
+              60,
+              "putfield",
+              "e.do"
+            ],
+            [
+              63,
+              "getfield",
+              "e.do"
+            ],
+            [
+              75,
+              "putfield",
+              "e.if"
+            ],
+            [
+              78,
+              "getfield",
+              "e.if"
+            ],
+            [
+              89,
+              "putfield",
+              "e.int"
+            ],
+            [
+              92,
+              "getfield",
+              "e.int"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 73,
+          "apis": {
+            "javax/microedition/lcdui/TextField.getString": 1,
+            "java/lang/Integer.parseInt": 1,
+            "javax/microedition/lcdui/Alert.<init>": 1,
+            "javax/microedition/lcdui/Alert.setTimeout": 1,
+            "javax/microedition/lcdui/ChoiceGroup.getSelectedIndex": 1
+          },
+          "constantes": [
+            [
+              17,
+              5
+            ],
+            [
+              34,
+              -2
+            ]
+          ],
+          "chamadas": [
+            [
+              6,
+              "javax/microedition/lcdui/TextField.getString"
+            ],
+            [
+              14,
+              "java/lang/Integer.parseInt"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              35,
+              "javax/microedition/lcdui/Alert.setTimeout"
+            ],
+            [
+              47,
+              "javax/microedition/lcdui/ChoiceGroup.getSelectedIndex"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "e.if"
+            ],
+            [
+              5,
+              "getfield",
+              "e.do"
+            ],
+            [
+              22,
+              "getfield",
+              "e.for"
+            ],
+            [
+              26,
+              "getfield",
+              "e.for"
+            ],
+            [
+              30,
+              "getstatic",
+              "AlertType.WARNING"
+            ],
+            [
+              37,
+              "getfield",
+              "e.for"
+            ],
+            [
+              42,
+              "getfield",
+              "e.for"
+            ],
+            [
+              43,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              44,
+              "getfield",
+              "f.a"
+            ],
+            [
+              46,
+              "getfield",
+              "e.a"
+            ],
+            [
+              50,
+              "getfield",
+              "e.for"
+            ],
+            [
+              51,
+              "getfield",
+              "AmobaMIDlet.for"
+            ],
+            [
+              52,
+              "getfield",
+              "f.a"
+            ],
+            [
+              56,
+              "getfield",
+              "e.for"
+            ],
+            [
+              58,
+              "getfield",
+              "e.for"
+            ],
+            [
+              59,
+              "getfield",
+              "AmobaMIDlet.do"
+            ],
+            [
+              64,
+              "getfield",
+              "e.int"
+            ],
+            [
+              67,
+              "getfield",
+              "e.for"
+            ],
+            [
+              69,
+              "getfield",
+              "e.for"
+            ],
+            [
+              70,
+              "getfield",
+              "AmobaMIDlet.do"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Form.<init>": 1,
+        "javax/microedition/lcdui/ChoiceGroup.<init>": 1,
+        "javax/microedition/lcdui/ChoiceGroup.append": 2,
+        "javax/microedition/lcdui/ChoiceGroup.setSelectedIndex": 1,
+        "javax/microedition/lcdui/Form.append": 2,
+        "java/lang/String.valueOf": 1,
+        "javax/microedition/lcdui/TextField.<init>": 1,
+        "javax/microedition/lcdui/Command.<init>": 2,
+        "javax/microedition/lcdui/Displayable.addCommand": 2,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+        "javax/microedition/lcdui/TextField.getString": 1,
+        "java/lang/Integer.parseInt": 1,
+        "javax/microedition/lcdui/Alert.<init>": 1,
+        "javax/microedition/lcdui/Alert.setTimeout": 1,
+        "javax/microedition/lcdui/ChoiceGroup.getSelectedIndex": 1
+      },
+      "padroes": []
+    },
+    {
+      "arquivo": "f.class",
+      "nome": "f",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "new",
+          "desc": "LAmobaMIDlet;",
+          "tipo_c": "AmobaMIDlet*"
+        },
+        {
+          "nome": "a",
+          "desc": "Lb;",
+          "tipo_c": "b*"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "for",
+          "desc": "Lg;",
+          "tipo_c": "g*"
+        },
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "int",
+          "desc": "Z",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LAmobaMIDlet;)V",
+          "tipo_ret": "void",
+          "n_instr": 50,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "javax/microedition/lcdui/Command.<init>": 1,
+            "javax/microedition/lcdui/Displayable.addCommand": 1,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+            "javax/microedition/lcdui/Canvas.getWidth": 2,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1
+          },
+          "constantes": [
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              37,
+              13
+            ],
+            [
+              39,
+              3
+            ],
+            [
+              41,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              21,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              28,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              47,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              48,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "f.new"
+            ],
+            [
+              14,
+              "putfield",
+              "f.do"
+            ],
+            [
+              17,
+              "getfield",
+              "f.do"
+            ],
+            [
+              30,
+              "putfield",
+              "f.a"
+            ],
+            [
+              43,
+              "putfield",
+              "f.for"
+            ]
+          ]
+        },
+        {
+          "nome": "keyReleased",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 23,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1,
+            "java/lang/Object.notifyAll": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              10,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ],
+            [
+              13,
+              "java/lang/Object.notifyAll"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "f.int"
+            ],
+            [
+              11,
+              "putfield",
+              "f.if"
+            ]
+          ]
+        },
+        {
+          "nome": "keyRepeated",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 23,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1,
+            "java/lang/Object.notifyAll": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              10,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ],
+            [
+              13,
+              "java/lang/Object.notifyAll"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "f.int"
+            ],
+            [
+              11,
+              "putfield",
+              "f.if"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 41,
+          "apis": {
+            "java/lang/Object.wait": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              38,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "java/lang/Object.wait"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "putfield",
+              "f.int"
+            ],
+            [
+              10,
+              "getfield",
+              "f.if"
+            ],
+            [
+              13,
+              "getfield",
+              "f.for"
+            ],
+            [
+              16,
+              "getfield",
+              "f.a"
+            ],
+            [
+              23,
+              "getfield",
+              "f.a"
+            ],
+            [
+              30,
+              "getfield",
+              "f.for"
+            ],
+            [
+              35,
+              "getfield",
+              "f.if"
+            ],
+            [
+              39,
+              "putfield",
+              "f.int"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 28,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              -1
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              16,
+              -1
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              23,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              26,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "f.a"
+            ],
+            [
+              9,
+              "getfield",
+              "f.a"
+            ],
+            [
+              15,
+              "getfield",
+              "f.a"
+            ],
+            [
+              21,
+              "getfield",
+              "f.a"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 60,
+          "apis": {
+            "javax/microedition/lcdui/Alert.<init>": 3,
+            "javax/microedition/lcdui/Alert.setTimeout": 1
+          },
+          "constantes": [
+            [
+              4,
+              2
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              10,
+              1
+            ],
+            [
+              53,
+              -2
+            ]
+          ],
+          "chamadas": [
+            [
+              26,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              50,
+              "javax/microedition/lcdui/Alert.<init>"
+            ],
+            [
+              54,
+              "javax/microedition/lcdui/Alert.setTimeout"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "f.a"
+            ],
+            [
+              21,
+              "getfield",
+              "f.new"
+            ],
+            [
+              25,
+              "getstatic",
+              "AlertType.INFO"
+            ],
+            [
+              33,
+              "getfield",
+              "f.new"
+            ],
+            [
+              37,
+              "getstatic",
+              "AlertType.INFO"
+            ],
+            [
+              45,
+              "getfield",
+              "f.new"
+            ],
+            [
+              49,
+              "getstatic",
+              "AlertType.INFO"
+            ],
+            [
+              56,
+              "getfield",
+              "f.new"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 30,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1
+          },
+          "constantes": [
+            [
+              7,
+              255
+            ],
+            [
+              8,
+              255
+            ],
+            [
+              9,
+              255
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ]
+          ],
+          "fields": [
+            [
+              18,
+              "getfield",
+              "f.a"
+            ],
+            [
+              23,
+              "getfield",
+              "f.for"
+            ],
+            [
+              26,
+              "getfield",
+              "f.for"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 16,
+          "apis": {},
+          "constantes": [
+            [
+              7,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "f.do"
+            ],
+            [
+              5,
+              "getfield",
+              "f.new"
+            ],
+            [
+              6,
+              "getfield",
+              "AmobaMIDlet.do"
+            ],
+            [
+              10,
+              "getfield",
+              "f.new"
+            ],
+            [
+              12,
+              "getfield",
+              "f.new"
+            ],
+            [
+              13,
+              "getfield",
+              "AmobaMIDlet.do"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Command.<init>": 1,
+        "javax/microedition/lcdui/Displayable.addCommand": 1,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 3,
+        "javax/microedition/lcdui/Canvas.getHeight": 2,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/lcdui/Canvas.getGameAction": 2,
+        "java/lang/Object.notifyAll": 2,
+        "java/lang/Object.wait": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 2,
+        "javax/microedition/lcdui/Alert.<init>": 3,
+        "javax/microedition/lcdui/Alert.setTimeout": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 1,
+        "javax/microedition/lcdui/Graphics.fillRect": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_RUN"
+      ]
+    },
+    {
+      "arquivo": "g.class",
+      "nome": "g",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "for",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "new",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljavax/microedition/lcdui/Canvas;",
+          "tipo_c": "Canvas*"
+        },
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "byte",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "try",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "int",
+          "desc": "Z",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(Ljavax/microedition/lcdui/Canvas;II)V",
+          "tipo_ret": "void",
+          "n_instr": 18,
+          "apis": {
+            "java/lang/Object.<init>": 1,
+            "javax/microedition/lcdui/Image.createImage": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Object.<init>"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Image.createImage"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "g.do"
+            ],
+            [
+              7,
+              "putfield",
+              "g.a"
+            ],
+            [
+              10,
+              "putfield",
+              "g.byte"
+            ],
+            [
+              14,
+              "putfield",
+              "g.if"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 30,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.repaint": 1,
+            "java/lang/Thread.sleep": 1
+          },
+          "constantes": [
+            [
+              7,
+              13
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              21,
+              13
+            ],
+            [
+              24,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              9,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              11,
+              "java/lang/Thread.sleep"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "g.do"
+            ],
+            [
+              4,
+              "getfield",
+              "g.a"
+            ],
+            [
+              6,
+              "getfield",
+              "g.byte"
+            ],
+            [
+              16,
+              "getfield",
+              "g.try"
+            ],
+            [
+              20,
+              "putfield",
+              "g.try"
+            ],
+            [
+              25,
+              "putfield",
+              "g.try"
+            ],
+            [
+              27,
+              "getfield",
+              "g.int"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1
+          },
+          "constantes": [
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              12,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              13,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "g.int"
+            ],
+            [
+              5,
+              "putfield",
+              "g.int"
+            ],
+            [
+              8,
+              "putfield",
+              "g.try"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 13,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              9,
+              13
+            ],
+            [
+              10,
+              13
+            ]
+          ],
+          "chamadas": [
+            [
+              11,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "g.int"
+            ],
+            [
+              4,
+              "getfield",
+              "g.do"
+            ],
+            [
+              6,
+              "getfield",
+              "g.a"
+            ],
+            [
+              8,
+              "getfield",
+              "g.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 65,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setClip": 2,
+            "javax/microedition/lcdui/Graphics.drawImage": 2
+          },
+          "constantes": [
+            [
+              5,
+              11
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              15,
+              13
+            ],
+            [
+              22,
+              3
+            ],
+            [
+              26,
+              6
+            ],
+            [
+              31,
+              4
+            ],
+            [
+              32,
+              16
+            ],
+            [
+              41,
+              13
+            ],
+            [
+              42,
+              13
+            ],
+            [
+              49,
+              66
+            ],
+            [
+              53,
+              11
+            ],
+            [
+              55,
+              12
+            ],
+            [
+              60,
+              4
+            ],
+            [
+              61,
+              16
+            ]
+          ],
+          "chamadas": [
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              34,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              43,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              63,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "g.int"
+            ],
+            [
+              4,
+              "getfield",
+              "g.try"
+            ],
+            [
+              9,
+              "getfield",
+              "g.a"
+            ],
+            [
+              13,
+              "getfield",
+              "g.byte"
+            ],
+            [
+              19,
+              "getfield",
+              "g.if"
+            ],
+            [
+              21,
+              "getfield",
+              "g.a"
+            ],
+            [
+              25,
+              "getfield",
+              "g.try"
+            ],
+            [
+              30,
+              "getfield",
+              "g.byte"
+            ],
+            [
+              38,
+              "getfield",
+              "g.a"
+            ],
+            [
+              40,
+              "getfield",
+              "g.byte"
+            ],
+            [
+              46,
+              "getfield",
+              "g.if"
+            ],
+            [
+              48,
+              "getfield",
+              "g.a"
+            ],
+            [
+              52,
+              "getfield",
+              "g.try"
+            ],
+            [
+              59,
+              "getfield",
+              "g.byte"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "java/lang/Object.<init>": 1,
+        "javax/microedition/lcdui/Image.createImage": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 2,
+        "java/lang/Thread.sleep": 1,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/lcdui/Graphics.setClip": 2,
+        "javax/microedition/lcdui/Graphics.drawImage": 2
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_RUN",
+        "USA_IMAGE"
+      ]
+    },
+    {
+      "arquivo": "h.class",
+      "nome": "h",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "do",
+          "desc": "LAmobaMIDlet;",
+          "tipo_c": "AmobaMIDlet*"
+        },
+        {
+          "nome": "for",
+          "desc": "Ljavax/microedition/lcdui/Displayable;",
+          "tipo_c": "Displayable*"
+        },
+        {
+          "nome": "if",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "a",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LAmobaMIDlet;Ljava/lang/String;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 32,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "javax/microedition/lcdui/Image.createImage": 1,
+            "javax/microedition/lcdui/Command.<init>": 1,
+            "javax/microedition/lcdui/Displayable.addCommand": 1,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1
+          },
+          "constantes": [
+            [
+              20,
+              4
+            ],
+            [
+              21,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              22,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              27,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              30,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "h.do"
+            ],
+            [
+              7,
+              "putfield",
+              "h.for"
+            ],
+            [
+              11,
+              "putfield",
+              "h.if"
+            ],
+            [
+              23,
+              "putfield",
+              "h.a"
+            ],
+            [
+              26,
+              "getfield",
+              "h.a"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 29,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              7,
+              255
+            ],
+            [
+              8,
+              255
+            ],
+            [
+              9,
+              255
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              21,
+              2
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              26,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              27,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              19,
+              "getfield",
+              "h.if"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "h.a"
+            ],
+            [
+              5,
+              "getfield",
+              "h.do"
+            ],
+            [
+              7,
+              "getfield",
+              "h.for"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Image.createImage": 1,
+        "javax/microedition/lcdui/Command.<init>": 1,
+        "javax/microedition/lcdui/Displayable.addCommand": 1,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 1,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "USA_IMAGE"
+      ]
+    }
+  ],
+  "n_classes": 10
+}
