@@ -1,4 +1,4 @@
-// amoba - main.c gerado por V14
+// amoba - main.c gerado por V15
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados, dedup)
+// Tipos J2ME (sem colidir com classes do projeto)
 typedef void* Alert;
 typedef void* AlertType;
 typedef void* Boolean;
@@ -106,7 +106,7 @@ void j2me_canvas_serviceRepaints(void) { }
 void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
-// Forward typedefs
+// Forward typedefs das classes do projeto
 typedef struct AmobaMIDlet_s AmobaMIDlet;
 typedef struct AmobaMIDlet_s AmobaMIDlet_s;
 typedef struct a_s a;
@@ -284,27 +284,27 @@ void b_constructor(void* self, int arg0, int arg1);
 void b_int_x(void* self);
 void b_byte(void* self);
 int b_new_x(void* self);
-void b_a(void* self, int arg0);
+void b_a_2(void* self, int arg0);
 int b_do_x(void* self);
 void b_do_x_2(void* self, int arg0);
 void b_for_x(void* self);
 void b_try_x(void* self);
 int b_if_x(void* self, int arg0, int arg1);
-int b_a_2(void* self, int arg0, int arg1, int arg2, int arg3);
-int b_a_3(void* self, int arg0, int arg1, int arg2);
+int b_a_3(void* self, int arg0, int arg1, int arg2, int arg3);
+int b_a_4(void* self, int arg0, int arg1, int arg2);
 void* b_if_x_2(void* self);
 void b_if_x_3(void* self, int arg0, int arg1, int arg2);
 void b_if_x_4(void* self, int arg0, int arg1, int arg2, int arg3);
-void b_a_4(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+void b_a_5(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
 int b_if_x_5(void* self, int arg0);
-void b_a_5(void* self, int arg0, int arg1);
-int b_a_6(void* self, void* arg0);
-void b_a_7(void* self);
+void b_a_6(void* self, int arg0, int arg1);
+int b_a_7(void* self, void* arg0);
+void b_a_8(void* self);
 int b_case_x(void* self);
-void b_a_8(void* self, void* arg0);
+void b_a_9(void* self, void* arg0);
 void b_char_x(void* self);
 void b_if_x_6(void* self, void* arg0);
-void b_a_9(void* self, void* arg0, int arg1, int arg2);
+void b_a_10(void* self, void* arg0, int arg1, int arg2);
 void c_constructor(void* self, void* arg0);
 void c_run(void* self);
 void c_keyReleased(void* self, int arg0);
@@ -456,7 +456,7 @@ int b_new_x(void* self) {
     return 0;
 }
 
-void b_a(void* self, int arg0) {
+void b_a_2(void* self, int arg0) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
@@ -494,14 +494,14 @@ int b_if_x(void* self, int arg0, int arg1) {
     return 0;
 }
 
-int b_a_2(void* self, int arg0, int arg1, int arg2, int arg3) {
+int b_a_3(void* self, int arg0, int arg1, int arg2, int arg3) {
     b* s = (b*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int b_a_3(void* self, int arg0, int arg1, int arg2) {
+int b_a_4(void* self, int arg0, int arg1, int arg2) {
     b* s = (b*)self;
     if (!s) return 0;
     (void)s;
@@ -527,7 +527,7 @@ void b_if_x_4(void* self, int arg0, int arg1, int arg2, int arg3) {
     (void)s;
 }
 
-void b_a_4(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+void b_a_5(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
@@ -540,20 +540,20 @@ int b_if_x_5(void* self, int arg0) {
     return 0;
 }
 
-void b_a_5(void* self, int arg0, int arg1) {
+void b_a_6(void* self, int arg0, int arg1) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
 }
 
-int b_a_6(void* self, void* arg0) {
+int b_a_7(void* self, void* arg0) {
     b* s = (b*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void b_a_7(void* self) {
+void b_a_8(void* self) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
@@ -566,7 +566,7 @@ int b_case_x(void* self) {
     return 0;
 }
 
-void b_a_8(void* self, void* arg0) {
+void b_a_9(void* self, void* arg0) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
@@ -584,7 +584,7 @@ void b_if_x_6(void* self, void* arg0) {
     (void)s;
 }
 
-void b_a_9(void* self, void* arg0, int arg1, int arg2) {
+void b_a_10(void* self, void* arg0, int arg1, int arg2) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
