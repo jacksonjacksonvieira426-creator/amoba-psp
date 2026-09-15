@@ -1,4 +1,4 @@
-// amoba - main.c gerado por V12
+// amoba - main.c gerado por V13
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,58 +16,62 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (todos como void*)
-typedef void* Image;
-typedef void* Graphics;
-typedef void* DirectGraphics;
-typedef void* Font;
-typedef void* String;
-typedef void* StringBuffer;
+// Tipos J2ME (auto-detectados)
+typedef void* Alert;
+typedef void* AlertType;
+typedef void* Boolean;
+typedef void* Byte;
+typedef void* Canvas;
+typedef void* Character;
+typedef void* ChoiceGroup;
+typedef void* Class_x;
 typedef void* Command;
+typedef void* CommandListener;
+typedef void* DataInputStream;
+typedef void* DirectGraphics;
 typedef void* Display;
 typedef void* Displayable;
-typedef void* Canvas;
+typedef void* Double_x;
+typedef void* Float_x;
+typedef void* Font;
+typedef void* Form;
 typedef void* FullCanvas;
 typedef void* GameCanvas;
+typedef void* Graphics;
+typedef void* Hashtable;
+typedef void* IOException;
+typedef void* Image;
+typedef void* InputStream;
+typedef void* Integer;
+typedef void* InterruptedException;
+typedef void* InvalidRecordIDException;
+typedef void* List;
+typedef void* Long_x;
+typedef void* MIDlet;
+typedef void* Math;
+typedef void* Object;
+typedef void* OutOfMemoryError;
+typedef void* OutputStream;
 typedef void* Random;
+typedef void* RecordEnumeration;
+typedef void* RecordFilter;
+typedef void* RecordStore;
+typedef void* RecordStoreException;
+typedef void* RecordStoreFullException;
+typedef void* RecordStoreNotFoundException;
+typedef void* RecordStoreNotOpenException;
+typedef void* Runnable;
+typedef void* Runtime;
+typedef void* Short_x;
+typedef void* String;
+typedef void* StringBuffer;
+typedef void* System;
+typedef void* TextField;
+typedef void* Thread;
+typedef void* Throwable;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
-typedef void* List;
-typedef void* Form;
-typedef void* TextField;
-typedef void* InputStream;
-typedef void* DataInputStream;
-typedef void* OutputStream;
-typedef void* RecordStore;
-typedef void* Thread;
-typedef void* MIDlet;
-typedef void* Object;
-typedef void* Class;
-typedef void* Math;
-typedef void* System;
-typedef void* Integer;
-typedef void* Long;
-typedef void* Short;
-typedef void* Byte;
-typedef void* Character;
-typedef void* Boolean;
-typedef void* Float;
-typedef void* Double;
-typedef void* Sound;
-typedef void* DeviceControl;
-typedef void* SpriteEvent;
-typedef void* SpriteListener;
-typedef void* SpriteAction;
-typedef void* MIDP;
-typedef void* SoundListener;
-typedef void* Player;
-typedef void* PlayerListener;
-typedef void* Control;
-typedef void* Manager;
-typedef void* DataInputStream2;
-typedef void* ByteArrayInputStream;
-typedef void* ByteArrayOutputStream;
 
 // Stubs de biblioteca
 void j2me_canvas_repaint(void) { }
@@ -75,7 +79,7 @@ void j2me_canvas_serviceRepaints(void) { }
 void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
-// Forward typedefs das classes do projeto
+// Forward typedefs
 typedef struct AmobaMIDlet_s AmobaMIDlet;
 typedef struct AmobaMIDlet_s AmobaMIDlet_s;
 typedef struct a_s a;
@@ -136,7 +140,7 @@ struct b_s {
     int          u;
     int          h;
     int          w;
-    signed char  null;
+    signed char  null_x;
     signed char  f;
     signed char  o;
     int          long_x;
@@ -157,8 +161,8 @@ struct b_s {
     int          b;
     int          for_x;
     int          D;
-    int          try;
-    int          new;
+    int          try_x;
+    int          new_x;
     int          do_x;
     int          if_x;
     int          else_x;
@@ -183,18 +187,18 @@ struct c_s {
     Image*       for_x;
     int          if_x;
     int          a;
-    int          new;
+    int          new_x;
 };
 
 struct d_s {
     String*      byte;
     String*      do_x;
     String*      a;
-    String*      new;
+    String*      new_x;
     String*      int_x;
     String*      if_x;
     AmobaMIDlet* for_x;
-    Command*     try;
+    Command*     try_x;
 };
 
 struct e_s {
@@ -206,7 +210,7 @@ struct e_s {
 };
 
 struct f_s {
-    AmobaMIDlet* new;
+    AmobaMIDlet* new_x;
     b*           a;
     Command*     do_x;
     g*           for_x;
@@ -216,12 +220,12 @@ struct f_s {
 
 struct g_s {
     int          for_x;
-    int          new;
+    int          new_x;
     Canvas*      do_x;
     int          a;
     int          byte;
     Image*       if_x;
-    int          try;
+    int          try_x;
     int          int_x;
 };
 
@@ -252,12 +256,12 @@ void b_a_constructor(void* self, int arg0, int arg1);
 void b_constructor(void* self, int arg0, int arg1);
 void b_int_x(void* self);
 void b_byte(void* self);
-int b_new(void* self);
+int b_new_x(void* self);
 void b_a(void* self, int arg0);
 int b_do_x(void* self);
 void b_do_x_2(void* self, int arg0);
 void b_for_x(void* self);
-void b_try(void* self);
+void b_try_x(void* self);
 int b_if_x(void* self, int arg0, int arg1);
 int b_a_2(void* self, int arg0, int arg1, int arg2, int arg3);
 int b_a_3(void* self, int arg0, int arg1, int arg2);
@@ -418,7 +422,7 @@ void b_byte(void* self) {
     (void)s;
 }
 
-int b_new(void* self) {
+int b_new_x(void* self) {
     b* s = (b*)self;
     if (!s) return 0;
     (void)s;
@@ -450,7 +454,7 @@ void b_for_x(void* self) {
     (void)s;
 }
 
-void b_try(void* self) {
+void b_try_x(void* self) {
     b* s = (b*)self;
     if (!s) return;
     (void)s;
