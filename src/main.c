@@ -1,4 +1,4 @@
-// amoba - main.c gerado por V13
+// amoba - main.c gerado por V14
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,42 +16,61 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados)
+// Tipos J2ME (auto-detectados, dedup)
 typedef void* Alert;
 typedef void* AlertType;
 typedef void* Boolean;
 typedef void* Byte;
+typedef void* ByteArrayInputStream;
+typedef void* ByteArrayOutputStream;
+typedef void* Calendar;
 typedef void* Canvas;
 typedef void* Character;
 typedef void* ChoiceGroup;
 typedef void* Class_x;
 typedef void* Command;
 typedef void* CommandListener;
+typedef void* Control;
 typedef void* DataInputStream;
+typedef void* DataOutputStream;
+typedef void* Date;
+typedef void* DateField;
+typedef void* DeviceControl;
 typedef void* DirectGraphics;
 typedef void* Display;
 typedef void* Displayable;
 typedef void* Double_x;
+typedef void* Enumeration;
 typedef void* Float_x;
 typedef void* Font;
 typedef void* Form;
 typedef void* FullCanvas;
 typedef void* GameCanvas;
+typedef void* Gauge;
 typedef void* Graphics;
 typedef void* Hashtable;
 typedef void* IOException;
 typedef void* Image;
+typedef void* ImageItem;
 typedef void* InputStream;
 typedef void* Integer;
 typedef void* InterruptedException;
 typedef void* InvalidRecordIDException;
+typedef void* Item;
+typedef void* Iterator;
 typedef void* List;
+typedef void* ListItem;
+typedef void* Locale;
 typedef void* Long_x;
 typedef void* MIDlet;
+typedef void* Manager;
 typedef void* Math;
 typedef void* Object;
 typedef void* OutOfMemoryError;
 typedef void* OutputStream;
+typedef void* Player;
+typedef void* Process;
+typedef void* Queue;
 typedef void* Random;
 typedef void* RecordEnumeration;
 typedef void* RecordFilter;
@@ -62,13 +81,21 @@ typedef void* RecordStoreNotFoundException;
 typedef void* RecordStoreNotOpenException;
 typedef void* Runnable;
 typedef void* Runtime;
+typedef void* Screen;
 typedef void* Short_x;
+typedef void* Sound;
+typedef void* Spacer;
+typedef void* Stack;
 typedef void* String;
 typedef void* StringBuffer;
+typedef void* StringTokenizer;
 typedef void* System;
+typedef void* TextBox;
 typedef void* TextField;
 typedef void* Thread;
 typedef void* Throwable;
+typedef void* Ticker;
+typedef void* TimeZone;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
@@ -117,16 +144,16 @@ int MapCanvas_lightflag = 0;
 
 // Structs
 struct AmobaMIDlet_s {
-    f*           for_x;
-    d*           do_x;
-    Hashtable*   a;
-    c*           if_x;
+    void*        for_x;
+    void*        do_x;
+    void*        a;
+    void*        if_x;
 };
 
 struct a_s {
     int          do_x;
-    RecordStore* if_x;
-    String*      a;
+    void*        if_x;
+    void*        a;
 };
 
 struct b_a_s {
@@ -140,9 +167,9 @@ struct b_s {
     int          u;
     int          h;
     int          w;
-    signed char  null_x;
-    signed char  f;
-    signed char  o;
+    void*        null_x;
+    void*        f;
+    void*        o;
     int          long_x;
     int          e;
     int          c;
@@ -151,12 +178,12 @@ struct b_s {
     int          y;
     int          j;
     int          byte;
-    String*      void_x;
-    String*      r;
-    String*      t;
+    void*        void_x;
+    void*        r;
+    void*        t;
     int          C;
     int*         l;
-    Image*       z;
+    void*        z;
     int          k;
     int          b;
     int          for_x;
@@ -170,11 +197,11 @@ struct b_s {
     int          goto_x;
     int          g;
     int          case_x;
-    signed char* a;
-    signed char* n;
+    void*        a;
+    void*        n;
     int*         B;
-    Random*      x;
-    Image*       q;
+    void*        x;
+    void*        q;
     int          v;
     int          i;
     int          A;
@@ -182,38 +209,38 @@ struct b_s {
 };
 
 struct c_s {
-    AmobaMIDlet* int_x;
-    Image*       do_x;
-    Image*       for_x;
+    void*        int_x;
+    void*        do_x;
+    void*        for_x;
     int          if_x;
     int          a;
     int          new_x;
 };
 
 struct d_s {
-    String*      byte;
-    String*      do_x;
-    String*      a;
-    String*      new_x;
-    String*      int_x;
-    String*      if_x;
-    AmobaMIDlet* for_x;
-    Command*     try_x;
+    void*        byte;
+    void*        do_x;
+    void*        a;
+    void*        new_x;
+    void*        int_x;
+    void*        if_x;
+    void*        for_x;
+    void*        try_x;
 };
 
 struct e_s {
-    AmobaMIDlet* for_x;
-    ChoiceGroup* a;
-    TextField*   do_x;
-    Command*     if_x;
-    Command*     int_x;
+    void*        for_x;
+    void*        a;
+    void*        do_x;
+    void*        if_x;
+    void*        int_x;
 };
 
 struct f_s {
-    AmobaMIDlet* new_x;
-    b*           a;
-    Command*     do_x;
-    g*           for_x;
+    void*        new_x;
+    void*        a;
+    void*        do_x;
+    void*        for_x;
     int          if_x;
     int          int_x;
 };
@@ -221,19 +248,19 @@ struct f_s {
 struct g_s {
     int          for_x;
     int          new_x;
-    Canvas*      do_x;
+    void*        do_x;
     int          a;
     int          byte;
-    Image*       if_x;
+    void*        if_x;
     int          try_x;
     int          int_x;
 };
 
 struct h_s {
-    AmobaMIDlet* do_x;
-    Displayable* for_x;
-    Image*       if_x;
-    Command*     a;
+    void*        do_x;
+    void*        for_x;
+    void*        if_x;
+    void*        a;
 };
 
 // Prototipos
